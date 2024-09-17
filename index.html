@@ -3,52 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>運動会プログラム</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="manifest" href="manifest.json">
+    <title>Athha's GitHub Projects</title>
     <style>
-        .status-local { color: green; }
-        .status-not-found { color: red; }
-        #program-table { margin-bottom: 20px; }
-        .edit-select { width: 100%; }
-        .add-program, .delete-program { cursor: pointer; }
-        .add-program { color: green; }
-        .delete-program { color: red; }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .project {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
-    <h1>運動会プログラム</h1>
+    <h1>Athha's GitHub Projects</h1>
+    <p>Welcome to my GitHub Pages. Here you can find links to various projects I've been working on:</p>
     
-    <input type="file" id="audio-file-input" multiple accept="audio/*" style="display: none;">
-    <button id="select-audio-files">音源ファイルを選択</button>
-    <button id="check-all-files">全ファイルの存在をチェック</button>
-    
-    <table id="program-table">
-        <thead>
-            <tr>
-                <th>時間</th>
-                <th>プログラム</th>
-                <th>音源区分</th>
-                <th>トラック番号</th>
-                <th>状態</th>
-                <th>音楽</th>
-                <th>操作</th>
-            </tr>
-        </thead>
-        <tbody>
-            <!-- プログラムの内容はJavaScriptで動的に追加されます -->
-        </tbody>
-    </table>
+    <ul>
+        <li class="project">
+            <h2><a href="https://athha.github.io/sports-music/">運動会音楽プログラム管理</a></h2>
+            <p>運動会の音楽プログラムを管理するためのアプリケーションです。</p>
+        </li>
+        <!-- 他のプロジェクトを以下に追加 -->
+        <!-- <li class="project">
+            <h2><a href="https://athha.github.io/project-name/">Project Name</a></h2>
+            <p>Brief description of the project.</p>
+        </li> -->
+    </ul>
 
-    <p>新しい行を追加するには、「＋」ボタンをクリックしてください。</p>
-
-    <div id="audio-path-info">
-        <h3>音源ファイルの命名規則：</h3>
-        <p>音源区分(a/b/c) + 2桁のトラック番号 + .mp3</p>
-        <p>音源区分が -- の場合: 2桁のトラック番号 + .mp3</p>
-        <p>例: a01.mp3, b15.mp3, c07.mp3, 01.mp3</p>
-    </div>
-
-    <script src="script.js"></script>
+    <footer>
+        <p>For more information, visit my <a href="https://github.com/Athha">GitHub profile</a>.</p>
+    </footer>
 </body>
 </html>
